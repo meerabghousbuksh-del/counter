@@ -1,0 +1,118 @@
+/* Container Box with Glassmorphism Effect */
+.counter-container {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px 30px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  width: 340px;
+  transition: transform 0.3s ease;
+}
+
+.counter-container:hover {
+  transform: translateY(-5px);
+}
+
+/* App Title */
+.counter-title {
+  color: #94a3b8;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* Main Counter Number Display */
+.counter-display {
+  font-size: 80px;
+  font-weight: 800;
+  color: #f8fafc;
+  margin: 15px 0;
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Warning Text when at 0 */
+.warning-text {
+  color: #f87171;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  background: rgba(248, 113, 113, 0.1);
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+/* Button Group Layout */
+.button-group {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Base Button Styling */
+.btn {
+  padding: 12px 18px;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+
+/* Active Press Effect */
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* Increment (+1) Button */
+.btn-inc {
+  background: linear-gradient(135deg, #38bdf8, #3b82f6);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
+}
+
+.btn-inc:hover {
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.6);
+  filter: brightness(1.1);
+}
+
+/* Decrement (-1) Button */
+.btn-dec {
+  background: linear-gradient(135deg, #f43f5e, #e11d48);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(244, 63, 94, 0.4);
+}
+
+.btn-dec:hover:not(:disabled) {
+  box-shadow: 0 6px 20px rgba(244, 63, 94, 0.6);
+  filter: brightness(1.1);
+}
+
+/* Disabled State for Decrement Button */
+.btn-dec:disabled {
+  background: #334155;
+  color: #64748b;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Reset Button */
+.btn-reset {
+  background: #334155;
+  color: #cbd5e1;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.btn-reset:hover {
+  background: #475569;
+  color: #ffffff;
+}
